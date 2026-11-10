@@ -21,7 +21,8 @@ module JejakEssential
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    config.time_zone = "Asia/Jakarta"
+    #config.time_zone = "Asia/Jakarta"
+    config.time_zone = "Asia/Jayapura"
     config.i18n.default_locale = :id
     config.i18n.available_locales = %i[id en]
     # Kunci yang belum diterjemahkan ke :en jatuh ke :id (dan sebaliknya), jadi
