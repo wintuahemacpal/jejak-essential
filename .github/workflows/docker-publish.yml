@@ -29,7 +29,7 @@ env:
   # Ditulis tetap, tidak mengikuti github.repository: nama repo boleh berganti,
   # tetapi docker-compose dan server yang sudah berjalan menarik image dengan
   # nama ini. Kalau mengikuti nama repo, server diam-diam berhenti dapat pembaruan.
-  IMAGE_NAME: ghcr.io/basharihasan/jejak-lite
+  IMAGE_NAME: ghcr.io/wintuahemacpal/jejak-lite
 
 jobs:
   build-and-push:
@@ -56,7 +56,7 @@ jobs:
         with:
           context: .
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: |
             ${{ env.IMAGE_NAME }}:latest
             ${{ env.IMAGE_NAME }}:${{ github.sha }}
